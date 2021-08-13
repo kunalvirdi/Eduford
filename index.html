@@ -18,7 +18,7 @@
         <nav>
             <a href="index.html"><img src="eduford_img/logo.png" alt="Eduford Logo"></a>
             <div class="nav-links" id="navlinks">
-                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <i class="fa fa-times" id="close"></i>
                 <ul><li><a href="">Home</a></li></ul>
                 <ul>
                     <li><a href="">About</a></li>
@@ -33,7 +33,7 @@
                     <li><a href="">Contact</a></li>
                 </ul>
             </div>
-            <i class="fa fa-bars" onclick="showMenu()" aria-hidden="true"></i>
+            <i class="fa fa-bars" id="open" aria-hidden="true"></i>
         </nav>
         <div class="text-box">
             <h1>World's Biggest University</h1>
@@ -42,15 +42,126 @@
         </div>
     </header>
     <!-- Course -->
-    
+    <section class="course">
+        <h1>Courses we offered</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias, sint!</p>
+        <div class="row">
+            <div class="course-1">
+                <h3>Intermediate</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque corrupti id iusto cumque explicabo. Deserunt facilis dignissimos dolorum, cumque molestiae iste voluptate numquam similique, praesentium placeat beatae odio cum temporibus laborum. Placeat.</p>
+            </div>
+            <div class="course-1">
+                <h3>Degree</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque corrupti id iusto cumque explicabo. Deserunt
+                    facilis dignissimos dolorum, cumque molestiae iste voluptate numquam similique, praesentium placeat beatae odio
+                    cum temporibus laborum. Placeat.</p>
+            </div>
+            <div class="course-1">
+                <h3>Post-Graduation</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque corrupti id iusto cumque explicabo. Deserunt
+                    facilis dignissimos dolorum, cumque molestiae iste voluptate numquam similique, praesentium placeat beatae odio
+                    cum temporibus laborum. Placeat.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Campus -->
+    <section class="campus">
+        <h1>Our Global Campus</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias, sint!</p>
+        <div class="row">
+            <div class="campus-col">
+                <img src="eduford_img/london.png" alt="">
+                <div class="layer">
+                    <h3>LONDON</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="eduford_img/newyork.png" alt="">
+                <div class="layer">
+                    <h3>NEWYORK</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="eduford_img/washington.png" alt="">
+                <div class="layer">
+                    <h3>WASHINGOTN</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Facilities -->
+    <section class="facilities">
+        <h1>Our facilities</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias, sint!</p>
+
+        <div class="row">
+            <div class="fac-col">
+                <img src="eduford_img/library.png" alt="">
+                <h3>World Class Library</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At ipsum vitae voluptate culpa sequi eveniet id beatae
+                    laboriosam fugit libero magnam earum porro nulla ullam aut, molestiae quidem velit! Illum, magni labore?</p>
+            </div>
+            <div class="fac-col">
+                <img src="eduford_img/basketball.png" alt="">
+                <h3>Largest PLay Ground</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At ipsum vitae voluptate culpa sequi eveniet id beatae
+                    laboriosam fugit libero magnam earum porro nulla ullam aut, molestiae quidem velit! Illum, magni labore?</p>
+            </div>
+            <div class="fac-col">
+                <img src="eduford_img/cafeteria.png" alt="">
+                <h3>Tasty and healthy food</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At ipsum vitae voluptate culpa sequi eveniet id beatae
+                    laboriosam fugit libero magnam earum porro nulla ullam aut, molestiae quidem velit! Illum, magni labore?</p>
+            </div>
+        </div>
+
+        <!-- Testimonials -->
+        <section class="testi">
+            <h1>What our student says.</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias, sint!</p>
+            <div class="row">
+                <div class="testi-col">
+                    <img src="eduford_img/user1.jpg" alt="">
+                    <div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, aliquid totam dignissimos error incidunt voluptatem laborum?</p>
+                        <h3>Christine Berkey</h3>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="testi-col">
+                    <img src="eduford_img/user2.jpg" alt="">
+                    <div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, aliquid totam dignissimos error incidunt
+                            voluptatem laborum?</p>
+                        <h3>David</h3>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </section>
     <script>
-        var nav=document.getElementById("navlinks");
+        var close = document.getElementById("close");
+        var open=document.getElementById("open");
+        var nav = document.getElementById("navlinks");
+        close.addEventListener('click', hideMenu);
+        open.addEventListener('click', showMenu)
+        
         function showMenu(){
             nav.style.display="flex";
         }
          function hideMenu() {
-                nav.style.display= "none";
-            }
+            nav.style.display= "none";
+        }
     </script>
 </body>
 </html>
