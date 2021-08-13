@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',
+    sans-serif;
+}
+
+header{
+    min-height: 100vh;
+    width: 100%;
+    background:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(../eduford_img/banner.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+/* Nav bar styling */
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 6%;
+}
+a{
+    text-decoration: none;
+}
+nav img{
+    width: 150px;
+}
+nav .nav-links{
+    display: flex;
+}
+
+.nav-links ul li{
+    list-style: none;
+    padding: 8px 12px;
+    position: relative;
+    
+}
+.nav-links ul li a{
+    color: white;
+    font-size: 0.9rem;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display:block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover:after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+}
+/* navbar styling end */
+
+
+/* main content style */
+.text-box{
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box a{
+    color: white;
+}
+.text-box h1{
+    font-size: 3.875rem;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 0.875rem;
+}
+.text-box .btn{
+    border: 1px solid white;
+    padding: 1rem;
+    font-size: 0.875rem;
+    background: transparent;
+    position: relative;
+    transition: 1s;
+}
+.text-box .btn:hover{
+    border: 1px solid #f44336;
+    background-color: #f44336;
+}
+/* main content style end here */
+nav .fa{
+    display: none;
+}
+@media(max-width:700px){
+    .text-box h1 {
+        font-size: 1.25rem;
+    }
+    nav .nav-links {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        position: absolute;
+        width: 200px;
+        top: 0;
+        right: 0;
+        background-color: #f44336;
+        z-index: 2;
+        justify-content: left;
+        display: none;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        color: white;
+        cursor: pointer;
+        font-size: 1.375rem;
+        margin: 10px;
+    }
+}
