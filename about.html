@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eduford</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- header and main -->
+    <header class="sub-header">
+        <nav>
+            <a href="index.html"><img src="eduford_img/logo.png" alt="Eduford Logo"></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" id="close"></i>
+                <ul><li><a href="">Home</a></li></ul>
+                <ul>
+                    <li><a href="">About</a></li>
+                </ul>
+                <ul>
+                    <li><a href="">Course</a></li>
+                </ul>
+                <ul>
+                    <li><a href="">Blog</a></li>
+                </ul>
+                <ul>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" id="open" aria-hidden="true"></i>
+        </nav>
+        <h1>About Us</h1>
+    </header>
+    <!-- about us content -->
+    <section class="abt">
+        <div class="row">
+            <div class="about-col">
+                <h1>We are the world's largest university.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum eum quibusdam consectetur, mollitia soluta voluptatem, id dolores, molestiae tempore hic cumque dolorum architecto! Doloremque minus maxime quam deleniti aperiam, tempora modi, voluptate cum omnis repellendus impedit. Iusto ipsa, quisquam architecto modi natus quo culpa consequuntur obcaecati voluptatum nisi provident numquam.</p>
+                <a href="" class="btn red-btn">EXPLORE NOW</a>
+            </div><div class="about-col">
+                <img src="eduford_img/about.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error exercitationem facilis delectus <br>. Eum quasi
+            repellat vel iure similique esse tenetur ratione iusto necessitatibus debitis.</p>
+        <div class="icons">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+        </div>
+        <p>Made by Kunal Virdi</p>
+    </section>
+    <script>
+        var close = document.getElementById("close");
+        var open=document.getElementById("open");
+        var nav = document.getElementById("navlinks");
+        close.addEventListener('click', hideMenu);
+        open.addEventListener('click', showMenu)
+        
+        function showMenu(){
+            nav.style.display="flex";
+        }
+         function hideMenu() {
+            nav.style.display= "none";
+        }
+    </script>
+</body>
+</html>
