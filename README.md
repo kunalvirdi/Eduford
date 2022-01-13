@@ -1,6 +1,6 @@
 # Eduford
 I made this website for just practice my HTML and CSS skills. \
-You can check this website from here: https://mrkunal7.github.io/Eduford/index.html \
+You can check this website from here: https://kunalvirdi.github.io/Eduford/index.html \
 
 # DESKTOP VIEW
 ![Screenshot 2021-08-14 195754](https://user-images.githubusercontent.com/71556630/129449586-303f89fa-4521-424e-8a0b-69ab00ffd2b6.png) \
